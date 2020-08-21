@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.IncomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragment_income_header"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="2dp"
+                app:cardBackgroundColor="@color/colorCard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/header_income_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="收入总览"
+                        android:textColor="@color/color_text_main"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/header_income_title">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/header_income_total_des"
+                                style="@style/FragmentTextTheme"
+                                android:text="@string/income" />
+
+                            <TextView
+                                android:id="@+id/header_income_avg_des"
+                                style="@style/FragmentTextTheme"
+                                android:text="@string/average_income" />
+
+                            <TextView
+                                android:id="@+id/header_income_surplus_des"
+                                style="@style/FragmentTextTheme"
+                                android:text="@string/remaining" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/header_income_total_amount"
+                                style="@style/FragmentTextTheme"
+                                android:textColor="@color/color_text_amount_white"
+                                android:text="1500" />
+
+                            <TextView
+                                android:id="@+id/header_income_avg_amount"
+                                style="@style/FragmentTextTheme"
+                                android:textColor="@color/color_text_amount_white"
+                                android:text="500" />
+
+                            <TextView
+                                android:id="@+id/header_income_surplus_amount"
+                                style="@style/FragmentTextTheme"
+                                android:textColor="@color/color_text_amount_white"
+                                android:text="300" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragment_income_histogram_group"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="2dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorCard">
+
+                <com.gang.economico.ui.customs.HistogramView
+                    android:id="@+id/fragment_income_histogram"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:gramTextSize="10sp"
+                    app:filledColor="@color/colorSecondaryAccent"
+                    app:selectedColor="@color/colorAccent"
+                    app:chartTitle="当月支出情况"
+                    app:titleColor="@color/color_text_main"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragment_income_category_stat_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/colorCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stat_income_category_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="各分类收入情况"
+                        android:padding="4dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/color_text_main"
+                        android:textSize="16sp"/>
+
+                    <com.gang.economico.ui.customs.PieChartView
+                        android:id="@+id/stat_income_pie_chart"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        app:pieChartTitleSize="32sp"
+                        android:layout_gravity="center"
+                        app:colorSchema="true"
+                        app:pieChartTitleColor="@color/colorSecondaryAccent"
+                        app:pieWidth="30dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorCard">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/stat_income_category_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nodata"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="暂无更多数据"
+                android:textColor="@color/color_text_main"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

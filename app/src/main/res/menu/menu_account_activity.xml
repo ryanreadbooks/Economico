@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mine_account_spending"
+        android:title="支出"
+        android:icon="@drawable/ic_spending_avatar_green"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/mine_account_income"
+        android:title="收入"
+        android:icon="@drawable/ic_income_avatar_green"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

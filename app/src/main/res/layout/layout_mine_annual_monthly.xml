@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorCard"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/colorCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mine_annual_year_item"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="一月"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/color_text_main"/>
+
+        <TextView
+            android:id="@+id/mine_annual_amount_item"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:text="@string/surplus"
+            android:textSize="24sp"
+            android:padding="4dp"
+            android:paddingEnd="16dp"
+            android:gravity="right"
+            android:textColor="@color/color_text_amount_white"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

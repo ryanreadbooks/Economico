@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33333d</color>
+    <color name="colorForTab">#322B2B</color>
+    <color name="colorPrimaryDark">#33333d</color>
+    <color name="colorDark">#302B2B</color>
+    <color name="colorAccent">#1EB980</color>
+    <color name="colorCard">#373740</color>
+    <color name="color_text_main">#AFA8A8</color>
+    <color name="color_text_amount_white">#ffffff</color>
+    <color name="edit_text_full_color">#EF0823</color>
+    <color name="colorSecondaryAccent">#80CAC4</color>
+    <color name="colorForHead">#565656</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="btnRippleColor">#2962FF</color>
+
+</resources>

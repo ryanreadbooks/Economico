@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Economico</string>
+    <string name="tips_main">本月剩余预算1200元. 请注意</string>
+    <string name="remaining">结余</string>
+    <string name="surplus">￥1200.00</string>
+
+    <string name="listitem_major_category">Dining</string>
+    <string name="listitem_minor_category">Dinner</string>
+    <string name="listitem_amount">-￥155</string>
+    <string name="listitem_remarks">吃了自助火锅</string>
+    <string name="listitem_time">2020.03.12 14:25</string>
+
+    <string name="edit_comment">备注:</string>
+    <string name="dining">餐饮</string>
+    <string name="spending">支出</string>
+    <string name="income">收入</string>
+    <string name="edit_confirm">保存</string>
+    <string name="edit_clear_all">CE</string>
+    <string name="comment_here">添加备注…</string>
+    <string name="comment_cancel">取消</string>
+    <string name="comment_confirm">确认</string>
+    <string name="comment_write_something">写一些东西吧…</string>
+    <string name="average_spending">平均支出</string>
+    <string name="average_income">平均收入</string>
+    <string name="jan">一月</string>
+    <string name="feb">二月</string>
+    <string name="mar">三月</string>
+    <string name="apr">四月</string>
+    <string name="may">五月</string>
+    <string name="june">六月</string>
+    <string name="july">七月</string>
+    <string name="aug">八月</string>
+    <string name="sept">九月</string>
+    <string name="oct">十月</string>
+    <string name="nov">十一月</string>
+    <string name="dec">十二月</string>
+    <string name="time">时间</string>
+    <string name="find_10_records">共10条记录</string>
+    <string name="mine_account_header_title">账户支出情况</string>
+
+    <string name="welcome_string">Bienvenido a Económico</string>
+    <string name="accounts_selection">请选择账户</string>
+    <string name="annual_spending">本年度总支出</string>
+
+
+</resources>

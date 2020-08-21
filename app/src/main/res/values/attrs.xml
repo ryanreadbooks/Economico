@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CategoryDisplayView">
+        <attr name="itemSpacingVer" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="GangEditText">
+        <attr name="underlineNeeded" format="boolean" />
+        <attr name="underlineColorNormal" format="color" />
+        <attr name="underlineColorFocused" format="color" />
+        <attr name="underlineWidth" format="dimension" />
+        <attr name="numTextSize" format="dimension" />
+        <attr name="numTextColorNormal" format="color" />
+        <attr name="numTextColorFilled" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressRingView">
+        <attr name="ringWidth" format="dimension" />
+        <attr name="ringBackgroundColor" format="color" />
+        <attr name="ringWarningColor" format="color" />
+        <attr name="ringErrorColor" format="color" />
+        <attr name="ringNormalColor" format="color" />
+        <attr name="textSizeInRing" format="dimension" />
+        <attr name="warningPercentage" format="fraction" />
+        <attr name="errorPercentage" format="fraction" />
+    </declare-styleable>
+
+    <declare-styleable name="HistogramView">
+        <attr name="filledColor" format="color" />
+        <attr name="selectedColor" format="color" />
+        <attr name="gramTextSize" format="dimension" />
+        <attr name="maxRangeY" format="float" />
+        <attr name="barOrientation" format="boolean" />
+        <attr name="showNumOnTop" format="boolean" />
+        <attr name="chartTitle" format="string" />
+        <attr name="titleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PieChartView">
+        <attr name="pieWidth" format="dimension" />
+        <attr name="pieChartTitle" format="string" />
+        <attr name="pieChartTitleSize" format="dimension" />
+        <attr name="pieChartTitleColor" format="color" />
+        <attr name="textColorInside" format="color" />
+        <attr name="colorSchema" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CurveChartView">
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="smooth" format="boolean"/>
+        <attr name="curveChartTitle" format="string"/>
+        <attr name="curveTitleColor" format="color"/>
+        <attr name="curveTitleSize" format="dimension"/>
+    </declare-styleable>
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+</resources>
